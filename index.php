@@ -1,1 +1,0 @@
-<h3>Minju cantik yaa..</h3>
