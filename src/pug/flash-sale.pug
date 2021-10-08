@@ -1,0 +1,142 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="home.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 Flash Sale
+
+                // Filter Option
+                .filter-option#suhaNavbarToggler
+                    i.lni.lni-cog
+
+        include inc/filter.pug
+
+        .page-content-wrapper
+
+            // Top Products
+            .top-products-area.py-3
+                .container
+                    .section-heading.d-flex.align-items-center.justify-content-between
+                        h6.ml-1 Flash Sale Products
+
+                    .row.g-3
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/1.png", alt="")
+                                        span.product-title Ceramic Planting Pot
+                                        p.sale-price $7.99
+                                            span.real-price $15
+                                        span.progress-title 33% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/2.png", alt="")
+                                        span.product-title Fancy Sofa Set
+                                        p.sale-price $14
+                                            span.real-price $21
+                                        span.progress-title 57% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/3.png", alt="")
+                                        span.product-title Classic Garden Chair
+                                        p.sale-price $36
+                                            span.real-price $49
+                                        span.progress-title 100% Sold Out
+                                        .progress
+                                            .progress-bar.bg-danger(role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/1.png", alt="")
+                                        span.product-title Ceramic Planting Pot
+                                        p.sale-price $7.99
+                                            span.real-price $15
+                                        span.progress-title 33% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/2.png", alt="")
+                                        span.product-title Fancy Sofa Set
+                                        p.sale-price $14
+                                            span.real-price $21
+                                        span.progress-title 57% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/3.png", alt="")
+                                        span.product-title Classic Garden Chair
+                                        p.sale-price $36
+                                            span.real-price $49
+                                        span.progress-title 100% Sold Out
+                                        .progress
+                                            .progress-bar.bg-danger(role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/1.png", alt="")
+                                        span.product-title Ceramic Planting Pot
+                                        p.sale-price $7.99
+                                            span.real-price $15
+                                        span.progress-title 33% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100")
+
+                        // Single Flash Sale Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.flash-sale-card
+                                .card-body
+                                    a(href="single-product.html")
+                                        img(src="img/product/2.png", alt="")
+                                        span.product-title Fancy Sofa Set
+                                        p.sale-price $14
+                                            span.real-price $21
+                                        span.progress-title 57% Sold Out
+                                        .progress
+                                            .progress-bar(role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

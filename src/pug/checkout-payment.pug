@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="checkout.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 Select Payment
+
+                // Navbar Toggler
+                .suha-navbar-toggler.d-flex.justify-content-between.flex-wrap#suhaNavbarToggler
+                    span
+                    span
+                    span
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper
+            .container
+                // Checkout Wrapper
+                .checkout-wrapper-area.py-3
+                    // Choose Payment Method
+                    .choose-payment-method
+                        h6.mb-3.text-center Choose Payment Method
+
+                        .row.justify-content-center.g-3
+                            // Single Payment Method
+                            .col-6.col-md-5
+                                .single-payment-method
+                                    a.credit-card(href="checkout-credit-card.html")
+                                        i.lni.lni-credit-cards
+                                        h6 Credit Card
+
+                            // Single Payment Method
+                            .col-6.col-md-5
+                                .single-payment-method
+                                    a.bank(href="checkout-bank.html")
+                                        i.lni.lni-restaurant
+                                        h6 Bank
+
+                            // Single Payment Method
+                            .col-6.col-md-5
+                                .single-payment-method
+                                    a.paypal(href="checkout-paypal.html")
+                                        i.lni.lni-paypal
+                                        h6 PayPal
+
+                            // Single Payment Method
+                            .col-6.col-md-5
+                                .single-payment-method
+                                    a.cash(href="checkout-cash.html")
+                                        i.lni.lni-revenue
+                                        h6 Cash
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

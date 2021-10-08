@@ -1,0 +1,12 @@
+/* Contact CSS */
+.form-control {
+    transition-duration: 500ms;
+    border-color: $border;
+    height: 50px;
+    padding: 0.375rem 1rem;
+    font-size: 14px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

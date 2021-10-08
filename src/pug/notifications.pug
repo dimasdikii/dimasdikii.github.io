@@ -1,0 +1,127 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="home.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 Notifications
+
+                // Navbar Toggler
+                .suha-navbar-toggler.d-flex.justify-content-between.flex-wrap#suhaNavbarToggler
+                    span
+                    span
+                    span
+
+        include inc/sidenav.pug
+
+        // Page Content Wrapper
+        .page-content-wrapper
+            .container
+                // Notifications Area
+                .notification-area.pt-3.pb-2
+                    h6.pl-1 Notifications
+
+                    .list-group
+                        // Single Notification
+                        a.list-group-item.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-alarm
+                            .noti-info
+                                h6.mb-0 Suha just uploaded a new product!
+                                span 12 min ago
+
+                        // Single Notification
+                        a.list-group-item.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-dropbox
+                            .noti-info
+                                h6.mb-0 Black Friday Deals in One Place
+                                span 49 min ago
+
+                        // Single Notification
+                        a.list-group-item.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-reply
+                            .noti-info
+                                h6.mb-0 Share your experience, it's matters!
+                                span 58 min ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-ship
+                            .noti-info
+                                h6.mb-0 Your order has been delivered.
+                                span Yesterday
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-heart-filled
+                            .noti-info
+                                h6.mb-0 Your wishlist is updated.
+                                span 2 days ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-thunder
+                            .noti-info
+                                h6.mb-0 11% Price drop! Hurry up.
+                                span 2 days ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-offer
+                            .noti-info
+                                h6.mb-0 Use 30% Discount Code
+                                span 3 days ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-ship
+                            .noti-info
+                                h6.mb-0 Your order has been delivered.
+                                span Yesterday
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-heart-filled
+                            .noti-info
+                                h6.mb-0 Your wishlist is updated.
+                                span 2 days ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-thunder
+                            .noti-info
+                                h6.mb-0 11% Price drop! Hurry up.
+                                span 2 days ago
+
+                        // Single Notification
+                        a.list-group-item.readed.d-flex.align-items-center(href="notification-details.html")
+                            span.noti-icon
+                                i.lni.lni-offer
+                            .noti-info
+                                h6.mb-0 Use 30% Discount Code
+                                span 3 days ago
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug
