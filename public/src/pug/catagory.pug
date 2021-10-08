@@ -1,0 +1,344 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="home.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 Product Catagory
+
+                // Filter Option
+                .filter-option#suhaNavbarToggler
+                    i.lni.lni-cog
+
+        include inc/filter.pug
+
+        .page-content-wrapper
+
+            // Catagory Single Image
+            .catagory-single-img(style="background-image: url('img/bg-img/4.jpg')")
+
+            // Product Catagories
+            .product-catagories-wrapper.py-3
+                .container
+                    .section-heading
+                        h6.ml-1 Sub Category
+
+                    .product-catagory-wrap
+                        .row.g-3
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-heart
+                                            span Women's
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-juice
+                                            span Juice
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-pizza
+                                            span Foods
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-basketball
+                                            span Sports
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-tshirt
+                                            span Men's
+                            // Single Catagory Card
+                            .col-4
+                                .card.catagory-card
+                                    .card-body
+                                        a(href="sub-catagory.html")
+                                            i.lni.lni-island
+                                            span Travel
+
+            // Top Products
+            .top-products-area.pb-3
+                .container
+                    .section-heading.d-flex.align-items-center.justify-content-between
+                        h6.ml-1 Catagory Products
+
+                    .row.g-3
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-success Sale
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/11.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Beach Cap
+                                    p.sale-price $13
+                                        span $42
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-primary New
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/5.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Wooden Sofa
+                                    p.sale-price $74
+                                        span $99
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-success Sale
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/6.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Roof Lamp
+                                    p.sale-price $99
+                                        span $113
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-danger -15%
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/9.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Sneaker Shoes
+                                    p.sale-price $87
+                                        span $92
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-danger -11%
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/8.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Wooden Chair
+                                    p.sale-price $21
+                                        span $25
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-warning Hot
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/4.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Polo Shirts
+                                    p.sale-price $38
+                                        span $41
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-success Sale
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/11.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Beach Cap
+                                    p.sale-price $13
+                                        span $42
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-primary New
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/5.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Wooden Sofa
+                                    p.sale-price $74
+                                        span $99
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-success Sale
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/6.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Roof Lamp
+                                    p.sale-price $99
+                                        span $113
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-danger -15%
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/9.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Sneaker Shoes
+                                    p.sale-price $87
+                                        span $92
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-danger -11%
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/8.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Wooden Chair
+                                    p.sale-price $21
+                                        span $25
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+                        // Single Top Product Card
+                        .col-6.col-md-4.col-lg-3
+                            .card.top-product-card
+                                .card-body
+                                    span.badge.badge-warning Hot
+                                    a.wishlist-btn(href="#")
+                                        i.lni.lni-heart
+                                    a.product-thumbnail.d-block(href="single-product.html")
+                                        img.mb-2(src="img/product/4.png", alt="")
+                                    a.product-title.d-block(href="single-product.html") Polo Shirts
+                                    p.sale-price $38
+                                        span $41
+                                    .product-rating
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                        i.lni.lni-star-filled
+                                    a.btn.btn-success.btn-sm.add2cart-notify(href="#")
+                                        i.lni.lni-plus
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

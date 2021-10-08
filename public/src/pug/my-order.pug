@@ -1,0 +1,153 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="profile.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 My Order Status
+
+                // Navbar Toggler
+                .suha-navbar-toggler.d-flex.justify-content-between.flex-wrap#suhaNavbarToggler
+                    span
+                    span
+                    span
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper
+            .container
+                .my-order-wrapper.py-3
+                    // Single Order Status
+                    .single-order-status
+                        .card.bg-warning.mb-3
+                            .card-body.d-flex.align-items-center
+                                .order-icon
+                                    i.lni.lni-checkmark-circle
+                                .order-status Delivered
+                                    span.order-date 2 Feb 2020
+
+                        .row.g-3
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/3.png", alt="")
+                                            span.product-title Classic Garden Chair
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/2.png", alt="")
+                                            span.product-title Modern Sofa
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/1.png", alt="")
+                                            span.product-title Black Table
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                    // Single Order Status
+                    .single-order-status
+                        .card.bg-warning.mb-3
+                            .card-body.d-flex.align-items-center
+                                .order-icon
+                                    i.lni.lni-plane
+                                .order-status Shipping
+                                    span.order-date 28 Jan 2020
+                        .row.g-3
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/3.png", alt="")
+                                            span.product-title Classic Garden Chair
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/2.png", alt="")
+                                            span.product-title Modern Sofa
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/1.png", alt="")
+                                            span.product-title Black Table
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                    // Single Order Status
+                    .single-order-status
+                        .card.bg-warning.mb-3
+                            .card-body.d-flex.align-items-center
+                                .order-icon
+                                    i.lni.lni-gift
+                                .order-status Packaging
+                                    span.order-date 27 Jan 2020
+
+                        .row.g-3
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/3.png", alt="")
+                                            span.product-title Classic Garden Chair
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/2.png", alt="")
+                                            span.product-title Modern Sofa
+                                            p.sale-price $36
+                                                span.real-price $49
+
+                            // Single Ordered Product Card
+                            .col-4.col-sm-4.col-lg-3
+                                .card.flash-sale-card
+                                    .card-body
+                                        a(href="single-product.html")
+                                            img(src="img/product/1.png", alt="")
+                                            span.product-title Black Table
+                                            p.sale-price $36
+                                                span.real-price $49
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,103 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container.h-100.d-flex.align-items-center.justify-content-between
+                // Back Button
+                .back-button
+                    a(href="home.html")
+                        i.lni.lni-arrow-left
+
+                // Page Title
+                .page-heading
+                    h6.mb-0 Live Chat
+
+                // Navbar Toggler
+                .suha-navbar-toggler.d-flex.justify-content-between.flex-wrap#suhaNavbarToggler
+                    span
+                    span
+                    span
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper
+            // Live Chat Intro
+            .live-chat-intro.mb-3
+                p Start a conversation
+                img(src="img/bg-img/9.jpg", alt="")
+                .status.online We're online
+                // Use this code for "Offline" Status
+                // .status.offline We’ll be back soon
+
+            // Support Wrapper
+            .support-wrapper.py-3
+                .container
+                    // Live Chat Wrapper
+                    .live-chat-wrapper
+
+                        // Agent Message Content
+                        .agent-message-content.d-flex.align-items-center
+                            // Agent Thumbnail
+                            .agent-thumbnail.mr-2
+                                img(src="img/bg-img/9.jpg", alt="")
+
+                            // Agent Message Text
+                            .agent-message-text
+                                p Hi there! You can start asking your question below. I am ready to help.                                
+                                span 12:00
+
+                        // User Message Content
+                        .user-message-content
+                            // User Message Text
+                            .user-message-text
+                                p Hi there!
+                                span 12:09
+
+                        // Agent Message Content
+                        .agent-message-content.d-flex.align-items-center
+                            // Agent Thumbnail
+                            .agent-thumbnail.mr-2
+                                img(src="img/bg-img/9.jpg", alt="")
+
+                            // Agent Message Text
+                            .agent-message-text
+                                p How can I help you with?
+                                span 12:13
+
+                        // User Message Content
+                        .user-message-content
+                            // User Message Text
+                            .user-message-text
+                                p I like your template. How can I buy this?
+                                span 12:18
+
+                        // Agent Message Content
+                        .agent-message-content.d-flex.align-items-center
+                            // Agent Thumbnail
+                            .agent-thumbnail.mr-2
+                                img(src="img/bg-img/9.jpg", alt="")
+
+                            // Agent Message Text
+                            .agent-message-text
+                                p - - -
+
+        // Internet Connection Status
+        .internet-connection-status#internetStatus
+
+        // Type Message Form
+        .type-text-form
+            form(action="#")
+                .form-group.file-upload.mb-0
+                    input(type="file")
+                    span.lni.lni-cloud-upload
+                textarea.form-control(name="message", cols="30", rows="10" placeholder="Type your message ...")
+                button(type="submit")
+                    i.fa.fa-paper-plane-o
+
+        include inc/footer.pug
